@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_width="match_parent">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/field_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/field1"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/field_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/field2"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/field_1"></androidx.appcompat.widget.AppCompatEditText>
+
+    <RadioGroup
+        android:id="@+id/choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/field_2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="addition"></RadioButton>
+        <RadioButton
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="soustraction"></RadioButton>
+        <RadioButton
+            android:id="@+id/mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="multipication"></RadioButton>
+        <RadioButton
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="division"></RadioButton>
+
+    </RadioGroup>
+
+v    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/computeResult"
+        android:style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_2"
+        tools:text="TextView"></com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/computation_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--</ScrollView>-->

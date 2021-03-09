@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="boutonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:background">@color/cardview_light_background</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

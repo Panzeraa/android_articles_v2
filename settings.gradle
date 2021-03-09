@@ -1,0 +1,6 @@
+include ':article'
+include ':newsletter'
+include ':fragments'
+include ':calculatrice'
+//include ':app'
+rootProject.name = "TPAndroid"
